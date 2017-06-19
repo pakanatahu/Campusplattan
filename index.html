@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="loginform.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="tab" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+        <li><a data-toggle="tab" href="#about">About</a></li>
+        <li><a data-toggle="tab" href="#projects">Projects</a></li>
+        <li><a data-toggle="tab" href="#contact">Contact</a></li>
+        <li><a data-toggle="tab" href="#leaderboard"><span class="glyphicon glyphicon-signal"></span> Leaderboard</a></li>
+
+        
+       </ul>
+       <ul class="nav navbar-right" id="myNavbar" >
+       <li class="navProfil"><a data-toggle="tab" href="#navProfil"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+       </ul>
+
+    </div>
+  </div>
+</nav>
+  
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h1>HOME</h1>
+      <img id="orupic" src="oru.jpg" alt="Örebo University" style="width: 30%;height: 20%">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="about" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="projects" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="contact" class="tab-pane fade in active">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+    <div id="leaderboard" class="tab-pane fade">
+
+    <div class="container">
+	<h3 id="leaderboardHead">Leaderboard</h3>
+	<p>Nollningsstatestik för Höstterminen 2017</p>
+      <table id="lbTable" class="table table-striped">
+      <thead>
+      	<tr>
+      		<th>Placering</th>
+      		<th>Förnamn</th>
+      		<th>Efternamn</th>
+      		<th>Poäng</th>
+      	</tr>
+      </thead>
+      	<tbody>
+      	    <tr class="even">
+      	    	<th>1</th>
+      	    	<th>Klas</th>
+      	    	<th>Malmgren</th>
+      			<th>1200p</th>
+      		</tr>
+      		<tr>
+      			<th>2</th>
+      			<th>George</th>
+      			<th>Orwell</th>
+      			<th>1000p</th>
+      		</tr>
+      		<tr class="even">
+      			<th>3</th>
+      			<th>Trasan</th>
+      			<th>Banane</th>
+      			<th>890p</th>
+      		</tr>
+      	</tbody>
+      </table>
+      </div>
+    </div>
+
+    <div id="navProfil" class="tab-pane fade">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Login to Your Account</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="password" name="pass" placeholder="Password">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				  </form>
+					
+				  <div class="login-help">
+					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+				  </div>
+				</div>
+			</div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+
+</body>
+</html>
